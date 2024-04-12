@@ -1,0 +1,54 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div
+  id="carouselExampleSlidesOnly"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "app/images/banner/b1.jpg" %}" class="d-block w-100"
+      alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b2.jpg" %}" class="d-block w-100"
+      alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b3.jpg" %}" class="d-block w-100"
+      alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b4.jpg" %}" class="d-block w-100"
+      alt="banner image">
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %}
+{% block main-content %}
+    <div class="container mt-3">
+        <br>
+        <h2 class="text-center">About Us</h2>
+        <br>
+        <div class="row conatiner">
+            <p class="fs-4 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit, officiis quis est assumenda, aliquid tenetur quae nemo earum, recusandae reiciendis sint sunt iste similique qui repudiandae necessitatibus nesciunt quidem.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex blanditiis dicta atque delectus autem, rerum amet vitae explicabo similique veniam quaerat enim, beatae, dignissimos itaque a reiciendis ipsum alias?
+            </p>
+        </div>
+        <br><br>
+        <h2 class="text-center">Mission</h2>
+        <br>
+        <div class="row container">
+            <p class="fs-4 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero blanditiis dolor, nisi voluptas sequi rerum impedit sapiente beatae pariatur ipsam veritatis soluta earum expedita modi quas. Voluptatibus, magnam! Quas?
+                
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias labore temporibus doloremque omnis blanditiis illo commodi. Non accusantium debitis error, veniam sint quae, ab nostrum temporibus ipsam amet, exercitationem in.
+            </p>
+        </div>
+    </div>
+{% endblock main-content %}
